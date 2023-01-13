@@ -1,0 +1,26 @@
+Phantom Devil:
+background color: #2b080b
+body color: #474646
+text color: #ffffff
+header: #1c1c1
+Link: #6588bc
+
+White Rabbit:
+background color: #1A181B
+body color: #AEDAD0
+text color: #FFFFFF
+header: #F7BCD1
+Others: #654C4F
+
+Gravity and Chaos:
+background color: #320709
+body color: #000000
+container color: #161616
+text color: #ffffff
+Header: #af111c
+Link color: #fce300
+
+Pirates:
+background color: #f0bc84
+body color: #202424
+text color: #ffffff

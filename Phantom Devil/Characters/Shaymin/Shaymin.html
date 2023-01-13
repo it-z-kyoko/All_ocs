@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="html">
+
+<head>
+  <title>Shaymin</title>
+  <link rel="stylesheet" href="../../Css/Charaktere.css" media="screen">
+  <meta property="og:title" content="Startseite">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/x-icon" href="">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div>
+      <div class="container">
+        <h1 class="HeaderStart">Victoria Shaymin Phantomhive</h1>
+        <div class="tab">
+          <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'Introduction')">Introduction</button>
+          <button class="tablinks" onclick="openCity(event, 'Personality and Relationships')">Personality and
+            Relationships</button>
+          <button class="tablinks" onclick="openCity(event, 'Abilities and Powers')">Abilities and Powers</button>
+          <button class="tablinks" onclick="openCity(event, 'History')">History</button>
+        </div>
+        <section class="section-1">
+            <div class="container-table">
+                <h1 class="TableHeader">Victoria Shaymin Phantomhive</h1>
+                <img src="" alt="" class="profile">
+                <table class="IntroductionTable">
+                    <tbody>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Official English Name:<br></td>
+                            <td style="padding-left: 4px">Victoria Shaymin Phantomhive</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Affiliation:</td>
+                            <td style="padding-left: 4px">tba</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Occupations:</td>
+                            <td style="padding-left: 4px"></td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Origin:</td>
+                            <td style="padding-left: 4px">London</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Epithet:</td>
+                            <td style="padding-left: 4px">The Devil</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Status:</td>
+                            <td style="padding-left: 4px">alive</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Age:</td>
+                            <td style="padding-left: 4px">18 (debut)</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Birthday:</td>
+                            <td style="padding-left: 4px">January 14th</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Height:</td>
+                            <td style="padding-left: 4px">tba</td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td style="padding-left: 4px">Blood Type:</td>
+                            <td style="padding-left: 4px">0</td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+</body>
+</html>
+<script>
+    function startTab() {
+      document.getElementById("defaultOpen").click();
+    }
+  
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  
+    startTab()
+  
+    // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
